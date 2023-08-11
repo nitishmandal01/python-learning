@@ -75,7 +75,7 @@ print("Sum is: ",sum, "Average is: ", sum/count)
 #     - *Input*: "Python"
 #     - *Output*: "nohtyP"
 
-# inputString = input("Write the String here:")
+inputString = input("Write the String here:")
 def reverseString(str):
     x=len(str)-1
     rev=""
@@ -84,15 +84,15 @@ def reverseString(str):
         x-=1
     return rev
 
-# reversedString = reverseString(inputString)
-# print(reversedString)
+reversedString = reverseString(inputString)
+print(reversedString)
 
 
 # **********************************************************************************
 # 6. **Count Vowels**: Write a Python program that counts the number of vowels in a given string.
 #     - *Input*: "Hello"
 #     - *Output*: "Number of vowels: 2"
-# inputStr = input("Write your Word: ")
+inputStr = input("Write your Word: ")
 
 def numberOfVowel(str):
     vowel=0
@@ -105,15 +105,17 @@ def numberOfVowel(str):
     return vowel
 
 
-# stringHaveVowels = numberOfVowel(inputStr)
-# print("Number of Vowels in your given String is", stringHaveVowels)
+stringHaveVowels = numberOfVowel(inputStr)
+print("Number of Vowels in your given String is", stringHaveVowels)
+
+
 # **********************************************************************************
 # 7. **Prime Number**: Write a Python function that checks whether a given number is a prime number.
 #     - *Input*: 13
 #     - *Output*: "13 is a prime number."
 
-# input2 = input("Write down the number: ")
-# inputNumber = int(input2)
+input2 = input("Write down the number: ")
+inputNumber = int(input2)
 
 def checkPrime(x):
     i=2
@@ -124,16 +126,16 @@ def checkPrime(x):
     return True
 
 
-# checkPrimeOrNot = checkPrime(inputNumber)
-# print(checkPrimeOrNot)
+checkPrimeOrNot = checkPrime(inputNumber)
+print(checkPrimeOrNot)
 
 # **********************************************************************************
 # 8. **Factorial Calculation**: Write a Python function that calculates the factorial of a number.
 #     - *Input*: 5
 #     - *Output*: "Factorial of 5 is 120."
 
-# input3 = input("Write down the number: ")
-# factInput = int(input3)
+input3 = input("Write down the number: ")
+factInput = int(input3)
 
 def factorial(x):
     i=1
@@ -143,8 +145,8 @@ def factorial(x):
         i+=1
     return fact
 
-# fact = factorial(factInput)
-# print("Factorial of ",factInput, " is ",fact)
+fact = factorial(factInput)
+print("Factorial of ",factInput, " is ",fact)
 
 
 
