@@ -219,6 +219,13 @@ for x, y in zip(list1s, reversed(list2s)):
 # {'Kelly': {'designation': 'Developer', 'salary': 8000}, 'Emma': {'designation': 'Developer', 'salary': 8000}}
 # ```
 
+employees = ['Kelly', 'Emma']
+defaults = {"designation": 'Developer', "salary": 8000}
+ans={}
+for key in employees:
+    ans[key] = defaults
+
+print(ans)
 
 # *******************************************************************************
 # ### Problem **9: Create a dictionary by extracting the keys from a given dictionary**
@@ -239,12 +246,23 @@ for x, y in zip(list1s, reversed(list2s)):
 # ```
 
 # **Expected output:**
-
-# ```
 # {'name': 'Kelly', 'salary': 8000}
-# ```
 
+sample_dict = {
+    "name": "Kelly",
+    "age": 25,
+    "salary": 8000,
+    "city": "New york"}
 
+# # Keys to extract
+keys = ["name", "salary"]
+ans={}
+
+for key in keys :
+    if key in sample_dict:
+        ans[key] = sample_dict[key]
+
+print(ans)
 # *******************************************************************************
 # ### Problem **10: Modify the tuple**
 
@@ -257,7 +275,11 @@ for x, y in zip(list1s, reversed(list2s)):
 # ```
 
 # **Expected output:**
-
-# ```
 # tuple1: (11, [222, 33], 44, 55)
-# ```
+
+tuple1 = (11, [22, 33], 44, 55)
+print(tuple1[1][0])
+
+tuple1[1][0] = 222
+
+print(tuple1)
